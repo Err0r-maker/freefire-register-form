@@ -86,7 +86,7 @@
 </head>
 <body>
   <h2>Free Fire League Registration Form</h2>
-  <form action="https://script.google.com/macros/s/AKfycbwJeUbbuTIqmyMGNwRBYwcFMvObkm6B7_HnukCKdu21RJlU-gaYTLlejMuAYlS5TqgBOg/exec" method="POST">
+  <form action="https://script.google.com/macros/s/AKfycbxmygvhktP62krHsQ3COdVoKDoydN8WbKUQn6gurXhTZSSSvWPV7oW0ESvR3AkEXebZGQ/exec" method="POST">
     <label for="teamname">Team Name</label>
     <input type="text" id="teamname" name="teamname" required>
 
@@ -110,16 +110,16 @@
     <label for="bloodgroup">Blood Group(optional)</label>
     <input type="text" name="bloodgroup"> <br> <br>
 
-    <label for="which-club">Are you Interactor, Rotaractor, or Non-Interactor/Rotaractor?</label><br>
+ <label for="whichclub">Are you Interactor, Rotaractor, or Non-Interactor/Rotaractor?</label><br>
 
-    <select id="which-club" name="which-club">
+    <select id="whichclub" name="whichclub">
       <option value="Interactor" selected>Interactor</option>
       <option value="Rotaractor">Rotaractor</option>
       <option value="Non-Interactor/Rotaractor">Non-Interactor/Rotaractor</option>
     </select>
     <div id="club-name-input" style="display:none; margin-top: 10px;">
-      <label for="club-name">Enter club name:</label>
-      <input type="text" id="club-name" name="clubname">
+    <label for="clubname">Enter club name:</label>
+      <input type="text" id="clubname" name="clubname">
     </div>
     <br><br>
   <script>
@@ -134,7 +134,7 @@
 
     // Call once on load
     window.onload = function () {
-      const select = document.getElementById('which-club');
+      const select = document.getElementById('whichclub');
       showClubInput(select.value);
 
       // Also attach change listener here
@@ -147,14 +147,14 @@
     <label for="email">Email</label>
     <input type="email" id="email" name="email" required>
 
-    <label for="number">Contact No.</label>
-    <input type="number" id="number" name="contactnumber" required>
+    <label for="contactnumber">Contact No.</label>
+    <input type="number" id="contactnumber" name="contactnumber" required>
 
-        <label>Scan QR to Pay</label><br>
+     <label>Scan QR to Pay</label><br>
 <img src="qrcode.jpg" alt="QR Code" style="width:200px; display:block; margin-bottom: 20px;">
 
-<label for="payment-link">Paste Payment Screenshot Link (Google Drive/Other)</label>
-<input type="text" id="payment-link" name="paymentlink" placeholder="https://drive.google.com/..." required>
+<label for="paymentlink">Paste Payment Screenshot Link (Google Drive/Other)</label>
+<input type="text" id="paymentlink" name="paymentlink" placeholder="https://drive.google.com/..." required>
 <small style="color: #ccc;">
 📝 Steps to share your screenshot:<br>
 1. Upload it to Google Drive<br>
@@ -163,7 +163,8 @@
 4. Copy the link and paste it above
 </small>
 
-<p> our contact number: +977 981-1397046 </p>
+<p> our contact number: +977 981-1397046
+                         </p>
 
     <input type="submit" value="Submit">
   </form>
